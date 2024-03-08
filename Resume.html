@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Personal Portfolio</title>
+    <div style="text-align:center;margin-top:40px;"></div>
+    <title>Resume</title>
+    <style>
+        .container {
+    margin-left: 50px;
+    margin-right: 50px;
+        }
+        /* Table Styles */
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size:40px;text-align:center;">PERSONAL PORTFOLIO</h1>
+<title>Header Container</title>
+  <style>
+      .header-container {
+          background-color: #9b9292; 
+          color: #fff; 
+          padding: 20px; 
+          text-align: center;
+      }
+      .header-link {
+          color: #fff; 
+          text-decoration: none;
+          margin: 0 10px; 
+      }
+      .header-link:hover {
+          text-decoration: underline;
+      }
+  </style>
+  </head>
+    <div class="header-container">
+        <a href="Portfolio.html" class="header-link">PORTFOLIO</a>
+        <a href="About.html" class="header-link">ABOUT</a>
+        <a href="Resume.html" class="header-link">RESUME</a>
+        <a href="Contact.html" class="header-link">CONTACT</a>
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "703b66f1-39ca-4e14-8101-b34d168c6591", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "2dc4d620-1584-4baa-82a6-b8e4eca6c111", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <h2 style="text-align:center;">MY RESUME</h2>
+    <div class="container">
+        <div class="left-column"></div>
+            <h2>RAVI SANKAR REDDY</h2>
+            <h3>CAREER OBJECTIVES</h3>
+            <td>"Dynamic and forward-thinking data scientist with a keen interest in Computer Science and Engineering.<br>
+                Over the next five years, my career objective is to become a seasoned expert in leveraging advanced analytics and AI-driven solutions to address real-world problems across diverse industries.<br>
+                I am committed to staying abreast of the latest trends and advancements in the field, while continuously honing my skills in data analysis, predictive modeling, and deep learning techniques.<br>
+                With a passion for innovation and a collaborative mindset, I aspire to contribute to groundbreaking projects that harness the power of data to drive transformative outcomes and shape the future of AI-driven decision-making."
+        </td>
+            <h3>EDUCATION</h3>
+            <table>
+                <tr>
+                    <th>COURSE</th>
+                    <th>BOARD/UNIVERSITY</th>
+                    <th>INSTITUTION</th>
+                    <th>YEAR OF PASSING</th>
+                    <th>PERCENTAGE</th>
+                </tr>
+                <tr>
+                    <td>BE - Computer Science And Engineering</td>
+                    <td>Anna University</td>
+                    <td>Nehru Institute Of Engineering And Technology</td>
+                    <td>2021-2025</td>
+                    <td>8.0%</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary</td>
+                    <td>State Board</td>
+                    <td>Narayana College</td>
+                    <td>2019-2021</td>
+                    <td>91%</td>
+                </tr>
+                <tr>
+                    <td>Secondary School</td>
+                    <td>State Board</td>
+                    <td>Rainbow English Medium School</td>
+                    <td>2018-2019</td>
+                    <td>9.7%</td>
+                </tr>
+            </table>
+        </div>
+        <h3>TECHINCAL SKILLS</h3>
+        <p>LANGUAGES - C | Python | Html | Css | Javascript  </p>
+        <p>TOOLS -  Visual Studio - Code | Github</p>
+        <p>FRAMEWORKS - Pandas </p>
+    </body>
+    </html>

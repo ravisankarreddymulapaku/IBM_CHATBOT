@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Personal Portfolio</title>
+<div style="text-align:center;margin-top:40px;"></div>
+<h1 style="font-size:40px;text-align:center;"> PERSONAL PORTFOLIO</h1>
+<div style="text-align:center;margin-top:40px;">
+<title>Header Container</title>
+<style>
+    .header-container {
+        background-color: #9b9292; 
+        color: #fff; 
+        padding: 15px; 
+        text-align: center;
+    }
+    .header-link {
+        color: #fff; 
+        text-decoration: none;
+        margin: 0 10px; 
+    }
+    .header-link:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+    <div class="header-container">
+        <a href="Portfolio.html" class="header-link">PORTFOLIO</a>
+        <a href="About.html" class="header-link">ABOUT</a>
+        <a href="Resume.html" class="header-link">RESUME</a>
+        <a href="Contact.html" class="header-link">CONTACT</a>
+    </div>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "703b66f1-39ca-4e14-8101-b34d168c6591", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "2dc4d620-1584-4baa-82a6-b8e4eca6c111", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+      <img style="margin-top:5px;" src="https://img.freepik.com/free-photo/web-design-technology-browsing-programming-concept_53876-163260.jpg" width="1250" height="420">
+</html>

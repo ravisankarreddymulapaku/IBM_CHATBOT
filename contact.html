@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Personal Portfolio</title>
+  <div style="text-align:center;margin-top:40px;"></div>
+  <title>Contact Form</title>
+  <style>
+  .form-container {
+    padding: 20px;
+    margin: 1% auto;
+    width: 50%;
+    max-width: 800px;
+  }
+
+    .form-row {
+      margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"],
+    .form-row textarea {
+      width: calc(100% - 150px);
+      padding: 10px;
+    }
+
+    .form-row input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .form-row input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<h1 style="font-size:40px;text-align:center;">PERSONAL PORTFOLIO</h1>
+<title>Header Container</title>
+  <style>
+      .header-container {
+          background-color: #9b9292; 
+          color: #fff; 
+          padding: 20px; 
+          text-align: center;
+      }
+      .header-link {
+          color: #fff; 
+          text-decoration: none;
+          margin: 0 10px; 
+      }
+      .header-link:hover {
+          text-decoration: underline;
+      }
+  </style>
+  </head>
+<div class="header-container">
+  <a href="Portfolio.html" class="header-link">PORTFOLIO</a>
+  <a href="About.html" class="header-link">ABOUT</a>
+  <a href="Resume.html" class="header-link">RESUME</a>
+  <a href="Contact.html" class="header-link">CONTACT</a>
+</div>
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "703b66f1-39ca-4e14-8101-b34d168c6591", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "2dc4d620-1584-4baa-82a6-b8e4eca6c111", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+<body>
+  <h2 style="text-align:center;">CONTACT ME</h2>
+  <div class="form-container">
+    <form action="process_form.php" method="post">
+      <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message:</label>
+        <textarea type="message" id="message" row="4" required></textarea>
+      </div>
+
+      <div class="form-row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+
+  
